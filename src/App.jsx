@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react'
 import { Search, AlertTriangle } from 'lucide-react'
 import logoColor from '@/assets/logo-color.png'
-import logoWhite from '@/assets/logo-white.png'
+import logoHub from '@/assets/logo-hub.svg'
 import { useApps } from '@/hooks/useApps'
 import { AppCard } from '@/components/AppCard'
 import { SkeletonCard } from '@/components/SkeletonCard'
@@ -82,7 +82,7 @@ export default function App() {
 
       {/* Hero compacto */}
       <div className="bg-gradient-to-br from-blue-700 to-blue-900 px-6 py-8 sm:py-10 text-center">
-        <img src={logoWhite} alt="" aria-hidden="true" className="h-10 mx-auto mb-5 opacity-90" />
+        <img src={logoHub} alt="" aria-hidden="true" className="h-24 mx-auto mb-5 opacity-90" />
         <SearchBar value={search} onChange={setSearch} />
       </div>
 
